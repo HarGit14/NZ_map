@@ -779,7 +779,7 @@ function exp_label_tourism_attraction_3_eval_expression(context) {
 }
 
 
-function exp_label_tourism_viewpoint_6_eval_expression(context) {
+function exp_label_tourism_viewpoint_4_eval_expression(context) {
     // concat(name, ' (', tourism, ')')
 
     var feature = context.feature;
