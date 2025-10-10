@@ -8,7 +8,7 @@ var style_tourism_attraction_3 = function(feature, resolution){
     };
     
     var labelText = ""; 
-    var value = feature.get("");
+    var value = feature.get("var value = '';");
     var labelFont = "10.4px \'Open Sans\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "#fab6ef";
@@ -20,13 +20,28 @@ var style_tourism_attraction_3 = function(feature, resolution){
     if (exp_label_tourism_attraction_3_eval_expression(context) !== null && resolution > 0 && resolution < 70) {
         labelText = String(exp_label_tourism_attraction_3_eval_expression(context));
     }
-    var style = [ new ol.style.Style({
+    
+        function rules_tourism_attraction_3(feature, value) {
+            var context = {
+                feature: feature,
+                variables: {}
+            };
+            // Start of if blocks and style check logic
+            if (exp_tourism_attraction_3rule0_eval_expression(context)) {
+                      return [ new ol.style.Style({
         image: new ol.style.RegularShape({radius: 8.0 + size, points: 5,
             radius2: 4.0, displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(247,252,18,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
+                    }
+            else {
+                return [];
+            }
+        }
+        var style = rules_tourism_attraction_3(feature, value);
+        ;
 
     return style;
 };

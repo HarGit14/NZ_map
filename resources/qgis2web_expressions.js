@@ -779,14 +779,27 @@ function exp_label_tourism_attraction_3_eval_expression(context) {
 }
 
 
-function exp_label_tourism_viewpoint_4_eval_expression(context) {
-    // concat(name, ' (', tourism, ')')
+function exp_tourism_attraction_3rule0_eval_expression(context) {
+    // 
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return fnc_concat([feature.get('name') ,' (',feature.get('tourism') ,')'], context);
+        return null;
     } else {
-        return fnc_concat([feature.get('name') ,' (',feature.get('tourism') ,')'], context);
+        return null;
+    }
+}
+
+
+function exp_Verena_Tspots_4rule0_eval_expression(context) {
+    // 
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return null;
+    } else {
+        return null;
     }
 }
