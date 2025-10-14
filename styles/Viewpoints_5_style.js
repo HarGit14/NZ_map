@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Attr_manual_4 = function(feature, resolution){
+var style_Viewpoints_5 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -17,12 +17,19 @@ var style_Attr_manual_4 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("name") !== null && resolution > 0 && resolution < 22) {
-        labelText = String(feature.get("name"));
+    if (exp_label_Viewpoints_5_eval_expression(context) !== null && resolution > 0 && resolution < 14) {
+        labelText = String(exp_label_Viewpoints_5_eval_expression(context));
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.RegularShape({radius: 8.0 + size, points: 6,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.781)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(61,44,255,0.781)'})}),
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.02586206896551724,
+                  anchor: [290.0, 290.0],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/tourist_view_point.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
