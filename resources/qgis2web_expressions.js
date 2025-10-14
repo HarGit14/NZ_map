@@ -766,7 +766,7 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_label_tourism_attraction_3_eval_expression(context) {
+function exp_label_Viewpoints_4_eval_expression(context) {
     // concat(name, ' (', tourism, ')')
 
     var feature = context.feature;
@@ -779,27 +779,14 @@ function exp_label_tourism_attraction_3_eval_expression(context) {
 }
 
 
-function exp_tourism_attraction_3rule0_eval_expression(context) {
-    // 
+function exp_label_Favorites_12_eval_expression(context) {
+    // name + ' (' + description + ')'
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return null;
+        return (((feature.get('name')  + ' (') + feature.get('description') ) + ')');
     } else {
-        return null;
-    }
-}
-
-
-function exp_Verena_Tspots_4rule0_eval_expression(context) {
-    // 
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return null;
-    } else {
-        return null;
+        return (((feature.get('name')  + ' (') + feature.get('description') ) + ')');
     }
 }

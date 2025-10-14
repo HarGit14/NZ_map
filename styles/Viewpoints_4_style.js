@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Verena_Tspots_6 = function(feature, resolution){
+var style_Viewpoints_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -17,12 +17,19 @@ var style_Verena_Tspots_6 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("Titel") !== null && resolution > 0 && resolution < 168) {
-        labelText = String(feature.get("Titel"));
+    if (exp_label_Viewpoints_4_eval_expression(context) !== null && resolution > 0 && resolution < 14) {
+        labelText = String(exp_label_Viewpoints_4_eval_expression(context));
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.76}), fill: new ol.style.Fill({color: 'rgba(18,172,243,1.0)'})}),
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.02586206896551724,
+                  anchor: [290.0, 290.0],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/tourist_view_point.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
