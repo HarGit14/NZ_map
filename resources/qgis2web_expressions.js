@@ -766,7 +766,7 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_label_Viewpoints_5_eval_expression(context) {
+function exp_label_Viewpoints_4_eval_expression(context) {
     // concat(name, ' (', tourism, ')')
 
     var feature = context.feature;
@@ -779,7 +779,7 @@ function exp_label_Viewpoints_5_eval_expression(context) {
 }
 
 
-function exp_label_Favorites_13_eval_expression(context) {
+function exp_label_Favorites_12_eval_expression(context) {
     // name + ' (' + description + ')'
 
     var feature = context.feature;

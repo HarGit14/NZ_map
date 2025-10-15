@@ -17,7 +17,7 @@ var style_Verena_Tspots_6 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("Titel") !== null && resolution > 0 && resolution < 168) {
+    if (feature.get("Titel") !== null && resolution > 0 && resolution < 56) {
         labelText = String(feature.get("Titel"));
     }
     var style = [ new ol.style.Style({
