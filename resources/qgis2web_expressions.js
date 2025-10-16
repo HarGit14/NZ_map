@@ -779,7 +779,7 @@ function exp_label_Viewpoints_4_eval_expression(context) {
 }
 
 
-function exp_label_Favorites_12_eval_expression(context) {
+function exp_label_Favorites_13_eval_expression(context) {
     // name + ' (' + description + ')'
 
     var feature = context.feature;
