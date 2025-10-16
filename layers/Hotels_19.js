@@ -1,0 +1,1 @@
+var json_Hotels_19 = {"type":"FeatureCollection","name":"Hotels_19","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","name":"Waipu Cove Resort"},"geometry":{"type":"Point","coordinates":[174.505625441163744,-36.029115622176583]}}]}

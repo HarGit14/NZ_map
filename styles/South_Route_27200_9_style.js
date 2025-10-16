@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_information_office_Neuseeland_20 = function(feature, resolution){
+var style_South_Route_27200_9 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,13 +16,12 @@ var style_information_office_Neuseeland_20 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
-    var placement = 'point';
+    var placement = 'line';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(231,113,72,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(112,122,232,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 6.308}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
